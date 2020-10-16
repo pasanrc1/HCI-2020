@@ -1,0 +1,93 @@
+.about{
+			background: gray;
+			border-style: solid;
+			border-width: 5px;
+			box-shadow: 6px;
+
+		}
+		.wrap{
+			width: 1000px;
+			margin: auto;
+			
+		}
+		.card{
+			box-shadow: 0 8px 8px 0 rgba(0,0,0,0.6);
+			transition: 0.4s;
+			width: 1000px;
+			background: white;
+			text-align: justify;.
+			font-size: 16px;
+			font-family: sans-serif;
+			padding: 12px;
+			border-radius: 15px;
+		}
+
+		h2{
+			font-size: 50px;
+			font-family: sans-serif;
+			text-align: center;
+		}
+		p{
+			font-size: 13px;
+			padding: 12px;
+			width: 950px;
+
+
+		}
+		h1{
+			text-align: center;
+		}
+
+		.flip-card {
+			  background-color: transparent;
+			  width: 300px;
+			  height: 300px;
+			  perspective: 1000px;
+			  padding: 12px 20px;
+		}
+
+		.flip-card-inner {
+  			  position: relative;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              transition: transform 0.6s;
+              transform-style: preserve-3d;
+              box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .flip-card:hover .flip-card-inner {
+              transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+             -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+        }
+        .flip-card-front {
+              background-color: #bbb;
+              color: black;
+        }
+        .flip-card-back {
+              background-color: skyblue;
+              color: white;
+              transform: rotateY(180deg);
+        }
+        .row:after {
+  	         content: "";
+            display: table;
+  			clear: both;
+  			width: 1000px;
+  			padding: 10px;
+		}
+
+/* Six columns side by side */
+		.column {
+  			float: left;
+  			width: 33%;
+		}
+		#card1{
+			background-color: white;
+
+		}

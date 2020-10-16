@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <title>MGBD Parts & Services - Home</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/clab-style.css" rel="stylesheet">
+
+
+  <style>
+
+  </style>
+</head>
+<body>  
+  <!-- Left column -->
+  <div class="clab-flex-row">
+    <div class="clab-sidebar"> 
+      <header class="clab-site-header">
+        <img src="images/logo.png" alt="Logo" class="img-responsive" width="250px" height="250px;" style="padding:  10px;"><h1>MGBD Parts & Services</h1>
+        <h6 style="color: white; font-style: italic; float: right;">Rover P6 Parts Specialist</h6>
+      </header>
+      <br />
+      <!-- Search box -->
+      <form class="clab-search-form" role="search">
+        <div class="input-group">
+          <button type="submit" class="fa fa-search"></button>
+          <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
+        </div>
+      </form>
+      <div class="mobile-menu-icon">
+        <i class="fa fa-bars"></i>
+      </div>
+      <nav class="clab-left-nav">          
+        <ul>
+          <li><a href="#"><i class="fa fa-home fa-fw"></i>History</a></li>
+          <li><a href="#"><i class="fa fa-bar-chart fa-fw"></i>Icelerts</a></li>
+          <li><a href="#"><i class="fa fa-database fa-fw"></i>Events</a></li>
+          <li><a href="#"><i class="fa fa-map-marker fa-fw"></i>Technical</a></li>
+          <li><a href="#"><i class="fa fa-eject fa-fw"></i>News</a></li>
+          <li><a href="#"><i class="fa fa-sliders fa-fw"></i>Specialists</a></li>
+          <li><a href="#"><i class="fa fa-users fa-fw"></i>Services</a></li>
+        </ul>  
+      </nav>
+    </div>
+    <!-- Main content -->
+    <div class="clab-content col-1 light-gray-bg">
+      <div >
+        <div class="row">
+          <nav> 
+            <div class="rightSection text-uppercase" >
+             <a href="index.html" class="selected links">Home</a> 
+             <a href="store.html" class="links">Store</a> 
+             <a href="carsSales.html" class="links">Cars For Sale</a> 
+             <a href="about.html" class="links">About US</a> 
+             <a href="contact.html" class="links">Contact US</a> 
+            
+           </nav>
+
+         </div>
+       </div>
+       <!--End Main content -->
+       <!-- your contents -->
+
+
+<head>
+	<title>GameFever.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link rel="stylesheet" type="text/css" href="css/loginStyle.css">
+	<link rel="stylesheet" type="text/css" href="css/tabs.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+
+</head>
+<body background="images/siteImages/tomb1.png">
+
+	<center>
+		<div class="back-rec" style="width: 100%; height: 100%;">
+		
+			<form name = "resetpass_form" action="ResetSucess.html" method = "post" onsubmit="return passwordsValidation();" style="margin: 0px; padding-top: 90px; height: 810px;">
+				<fieldset>
+					<legend class="log">- Reset Password -</legend>
+
+						 <p class="form_title" style="margin-top: 5%; font-size: 17px;">User Email</p>
+						 <input type="text" name="reset_mail" class="input_txt" value = "ayeshDissanayaka@icloud.com" required="required" readonly>
+
+						 <p class="form_title" style="font-size: 17px;">Password</p>
+						 <input type="password" id="reset_pw1"
+						  oninput = "checkPassword('reset_pw1', 'reset_pw1Output', 'Password', 8);" class="input_txt" placeholder="Password">
+						 <br><span align="right" class="err" id="reset_pw1Output"></span>
+						 
+						 <p class="form_title" style="font-size: 17px;"><br>Confirm Password</p>
+						 <input type="password" id="reset_pw2" class="input_txt" 
+						 oninput = "confirmPassword('reset_pw2', 'reset_pw1', 'reset_pw2Output', 'Passwords');"placeholder="Confirm Password">
+						 <br><span align="right" class="err" id="reset_pw2Output"></span>
+				
+						 
+						 <br><br><br>
+						 <input type="submit" value="Proceed" class="sub_btn">
+						 <br><br>
+						
+				
+						
+						
+				</fieldset>		
+				
+							  
+			</form>
+		</div>
+	</center>
+
+	<script type="text/javascript">
+
+		var reset_pw1Output = document.getElementById('reset_pw1Output');
+		var reset_pw2Output = document.getElementById('reset_pw2Output');
+		
+		function checkPassword(inputField, outputField, inpName, minLength){
+			var inp = document.getElementById(inputField).value;
+			var pattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/ ;
+			
+			if(inp.length <= 0){
+				document.getElementById(outputField).innerHTML = inpName + " should not be empty";
+				return false;
+			}
+
+			else{
+					if( !(inp.length >= 8) ){
+						document.getElementById(outputField).innerHTML = "Password should more than <br>" + minLength + " characters long";
+						return false;
+					}
+
+					else{
+						if( !(inp.match(pattern)) ){
+							document.getElementById(outputField).innerHTML = "Password should contains at least<br> 1 uppercase, 1 lowercase, <br> 1 digit and 1 Special Character";
+							return false;
+						}	
+
+						else{
+							document.getElementById(outputField).innerHTML="<img src=\'images/validation/check.png\' width=\'20px\' height=\'20px\'>";
+							return true;
+						}
+					}
+
+					
+			}
+		}
+
+		function confirmPassword(inputField, compareField, outputField, inpName){
+			var inp = document.getElementById(inputField).value;
+			var comp = document.getElementById(compareField).value;
+
+			if(inp.length >= 1){
+				if(inp == comp){
+					document.getElementById(outputField).innerHTML="<img src=\'images/validation/check.png\' width=\'20px\' height=\'20px\'>";
+					return true;
+				}
+
+				else{
+					document.getElementById(outputField).innerHTML = inpName + " not matching";
+					return false;
+				}
+			}
+
+			else{
+				document.getElementById(outputField).innerHTML = inpName + " should not be empty";
+				return false;
+			}	
+		}
+
+		function passwordsValidation(){
+			var cnt = 0;
+			if(checkPassword('reset_pw1', 'reset_pw1Output', 'Password', 8) == true){
+				cnt = cnt + 1;
+			}
+
+			if(confirmPassword('reset_pw2', 'reset_pw1', 'reset_pw2Output', 'Passwords') == true){
+				cnt = cnt + 1;
+			}
+
+			if(cnt >= 2){
+				return true;
+			}
+
+			else{
+				return false;
+			}
+		}
+	
+
+	</script>
+	
+	
+</body>
+
+      <!-- End your contents -->
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>Adddress</h6>
+              <p class="text-justify"><i class="fa fa-map-marker fa-fw"></i>Unit 1 Ashford Est, Dixon Street. W2 VBX, UK</p>
+              <h6>Email</h6>
+              <p class="text-justify">sales@mydbparts.com</p>
+              <h6>Voice</h6>
+              <p class="text-justify">+44(0)1902689975</p>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="carsSales.html">Cars For Sale</a></li>
+                <li><a href="about.html">About US</a></li>
+                <li><a href="contact.html">Contact US</a></li>
+              </ul>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+               <a href="index.html">MGBD Parts & Services</a>.
+             </p>
+           </div>
+
+           <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>     
+  </div>
+</div>
+</div>
+<script type="text/javascript" src="js/clab-script.js"></script> 
+</body>
+</html>

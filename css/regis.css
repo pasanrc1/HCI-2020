@@ -1,0 +1,40 @@
+.back-rec1 {
+			width: 1000px; 
+			height: auto; 
+			
+			background-color: black;
+			opacity: 0.85;
+			
+			
+}
+
+.regis_frm { 
+				height: 50%;
+				padding-top: 30px;
+                padding-bottom: 30px;
+				
+                width: 20%; 
+				
+
+
+}
+
+
+.regis_frm tr, td { padding: 35px;
+                    margin: 1px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-right: relative;
+}
+
+
+.error { font-size: 5px;
+			margin: 20px;
+            padding-top: 210px;
+            margin-top: 50px;
+            padding-bottom: 10px;
+			color: red;
+
+}
+
+
